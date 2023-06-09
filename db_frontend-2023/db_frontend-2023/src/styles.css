@@ -1,0 +1,65 @@
+html { background: rgb(8, 63, 90); padding: 1rem; }
+
+h1 { color: rgb(185, 46, 100); margin: 1rem 0; font-size: 1.4em;}
+
+a { color: #508991; }
+hr { border: none; border-top: 2px solid darkgray; }
+.post .about { color: slategray; font-style: italic; }
+.post .content { white-space: pre-line; }
+.content form { margin: 1em 0; display: flex; flex-direction: column; }
+.danger { color: #cc2f2e; }
+button[type=submit] { align-self: start; min-width: 10em; border-radius: 3px; border-width: 1px}
+input[type=text] { align-self: start; min-width: 10em; border-radius: 3px; border-width: 1px; padding: 2px; vertical-align: top; margin: 1px}
+input[type=password] { align-self: start; min-width: 10em; border-radius: 3px; border-width: 1px; padding: 2px; vertical-align: top; margin: 1px}
+textarea {
+    align-self: start;
+    width: 167px;
+    height: 150px;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f8f8f8;
+    resize: none;
+    margin: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+input[type=label] { align-self: start; min-width: 10em; border-radius: 3px;border-width: 1px; padding: 2px ; vertical-align: top;margin: 1px }
+.postBody {white-space: pre-line; padding-left: 30px; padding-right: 30px}
+
+.FancyBorder {
+  padding: 10px 10px;
+  border: 10px solid;
+}
+
+.FancyBorder-blue {
+  border-color: blue;
+}
+
+.FancyBorder-grey {
+  border-color: lightgray;
+}
+.Dialog-title {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.Dialog-message {
+  font-size: larger;
+}
+/* CSS for TextTransition component that uses the addon:  react-addons-css-transition-group*/
+
+.fade-appear { 
+    opacity: 0.01; 
+}
+.fade-appear.fade-appear-active { 
+  opacity: 1; 
+  transition: opacity .5s ease-in; 
+}
+
+/* User heading style */
+.username { color:rgb(8, 63, 90); margin: 1rem 0; font-size: 1.2em;}
+
+/* Logout message style */
+.logout { color:rgb(65, 184, 42); margin: 1rem 0; font-size: 1.2em;}
