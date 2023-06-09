@@ -8,7 +8,10 @@ export default function Post(props) {
   const navigate = useNavigate();
 
   // Add handlers to execute the edit/delete button actions
-  
+  const handleDeleteAction = (postId) => {
+    navigate(`/delete/${postId}`);
+  }
+
   return (
     <>
       <article className="post">
@@ -20,7 +23,10 @@ export default function Post(props) {
           </div>
           {Cookies.get('userid') === String(props.post[1]) &&
             <div>
-              {/* Add some functionality here to handle a post being updated or deleted, buttons would useful */}
+
+              <Button onClick={() => {
+                handleDeleteAction(props.post[0]);
+              }}>Delete Post</Button>
             </div>
           }
         </header>

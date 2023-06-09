@@ -48,6 +48,19 @@ def create_post():
         # we send HTTP 404 - Not Found error to the client
         abort(404)
 
+def delete_post(post_id):
+    deleted_post = DATA_PROVIDER.delete_post(post_id=post_id)
+    deleted = False
+    try:
+        data = request.get_json(force=True)
+        print(data)
+        deleted = True
+    except Exception as exc:
+        print(exc)
+    if deleted:
+        return make_response('', 200)
+    else:
+        return make_response('', 404)
 
 # update a post
 def update_post(post_id):
